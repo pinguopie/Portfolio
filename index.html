@@ -37,6 +37,27 @@
 	  });
 	});
 	
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 </script>
    
     </head>
@@ -81,7 +102,24 @@
                         <div class="LCtext">
                         	<p3> OVERCROWDING </p3>
                         		<br>
-                        	<p4> Many dogs are placed in one cage. The cages used are wired, so as to allow their faeces to fall through. However, the cages are usually stack one above another which led to them stepping on their faeces as a solid ground. </p4>
+                        	<p4> Many dogs are being placed in one cage. This caused them to fight among each other as they try to get more space for each of them.</p4>
+                            
+                            <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">How much space does a dog actually needs?</button>
+  <div id="myDropdown" class="dropdown-content">
+    <div class="drop"> <img src="img/overcrowding2.jpg" width="50%"> </div>
+    <br>
+    <div class="drop2"> Length: Measure the length of your dog from nose to tail. When measuring the tail, be sure to add approximately 2-4 inches to the overall length, depending on the size of your dog.
+<br><br>
+Height: To determine the height of the crate you will need, measure your dog from the top of the head to the ground. If your dog has naturally erect ears, measure from the tip of the ears.
+<br><br>
+Width: To obtain the width of your crate, add approximately 2 inches for smaller breeds and 4 inches for larger breeds.</div>
+
+
+
+  </div>
+</div>
+                            
                         </div>
                     </div>
                     <div class="LCcontent1">
@@ -91,7 +129,7 @@
                         <div class="LCtext">
                         	<p3> CONTAMINATED </p3>
                         		<br>
-                        	<p4> Given very little food and water, or not at all. Sometimes even infested with maggots. </p4>
+                        	<p4> They are given very little food and water, or not at all. Sometimes even infested with maggots. </p4>
                         </div>
                     </div>
                     <div class="LCcontent2">
@@ -101,7 +139,7 @@
                         <div class="LCtext">
                         	<p3> IMPRISONED </p3>
                         		<br>
-                        	<p4> They do not get to play, exercise or socialize. </p4>
+                        	<p4> Dogs are not usually let out of their cage in the entire Puppy Mill journey. They do not get to play, exercise or socialize. </p4>
                         </div>
                     </div>
 				</div>
@@ -142,7 +180,7 @@
                         <div class="LCtext">
                         	<p3> WAITING FOR DEATH </p3>
                         		<br>
-                        	<p4> Most of these dogs aren't give the necessary medication or a doctors visits. It isn't uncommon for them to go undiagnosed and untreated. The puppies that are ultimately sold to consumers are commonly sick before they even arrive at their forever homes, and sadly, some die shortly after they are purchased and brought home. </p4>
+                        	<p4> Most of these dogs are not given the necessary medication or a doctors visits. It isn't uncommon for them to go undiagnosed and untreated. The puppies that are ultimately sold to consumers are commonly sick before they even arrive at their forever homes, and sadly, some die shortly after they are purchased and brought home. </p4>
                         </div>
                     </div>
 				</div>
@@ -186,14 +224,15 @@
                 <div class="aftermath">
                     <p1> AFTERMATH OF PUPPY MILL </p1>
                     <br>
-                    <p2> Puppy mill dogs require extra attention and training in order to rehabilitate them because the conditions they were brought up in are horrible. Unlike reputable breeders, who take the steps necessary for the comfort of their breeding dogs and puppies, puppy mills treat their dogs as products to be churned out as quickly as possible. </p2>
+                    <p2> Puppy mill dogs require extra attention and training in order to rehabilitate them because the conditions they were brought up in are horrible. Unlike reputable breeders, who take the steps necessary for the comfort of their breeding dogs and puppies, puppy mills treat their dogs as products to be churned out as quickly as possible. <br>
+                    They are usually down with mental health. </p2>
                 </div>
                 
                 
                 <div class="guidelines">
                     <p1> GUIDELINES </p1>
                     <br>
-                    <p2> To prevent yourself from purchasing from puppy mill, here is a list of guidelines that are possibly able to tell whether the puppy is from puppy mill.  </p2>
+                    <p2> Although Puppy Mill is an underground issue and confidential to a certain extend, it is still possible to prevent yourself from purchasing puppies from puppy mills.  </p2>
                 </div>
                 
                 <div class="GLcontent">
@@ -206,9 +245,7 @@
                         <br>
                         <img src="img/checkbox.png"> Breeders who are reluctant to show potential customers the entire premises of breeding
                         <br>
-                        <img src="img/checkbox.png"> Breeders who don't ask a lot of questions of potential buyers.
-                        <br>
-                        <img src="img/checkbox.png"> Don't buy from the Internet.
+                        <img src="img/checkbox.png"> Don't buy from the Internet
                         <br>
                        
                     </div>
@@ -216,7 +253,7 @@
                     <div class="adoption">
                     <p1> ADOPTIONS </p1>
                     <br>
-                    <p2> Play a part and do not support puppy mill. If you are interested in giving one of the dogs, you may consider adoption instead. Together, we can drop the demand and give the homeless dogs a warm home.  </p2>
+                    <p2> Play a part and do not support puppy mill. If you are interested in giving one of the dogs a home, you may consider adoption instead. Together, we can drop the demand and give the homeless dogs a warm home.  </p2>
                 </div>
                 
                 <div class="GLcontent">
@@ -234,7 +271,7 @@
                 <div class="collab">
                     <p1> COLLABORATIONS </p1>
                     <br>
-                    <p2> As the purpose of the campaign aligns with the idea of Woof Infinity Project, we have intended to collaborate with them to help all the furry friends.  </p2>
+                    <p2> Since the intention of this campaign aligns with the purpose of The Woof Infinity Project, a collaboration together would help to raise awareness about Puppy Mill even better.  </p2>
                     
                 
                 <div class="woof">
